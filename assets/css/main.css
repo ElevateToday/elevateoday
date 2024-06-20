@@ -2400,7 +2400,7 @@
 		background-color: #20afd5;
 		border-radius: 4px;
 		border: 0;
-		color: #ffffff;
+		color: orange;
 		cursor: pointer;
 		display: inline-block;
 		font-family: "Montserrat", sans-serif;
@@ -2628,7 +2628,7 @@
 
 		.wrapper h1, .wrapper h2, .wrapper h3, .wrapper h4, .wrapper h5 {
 			/* color: #25a2c3; */
-			color: #0041a3;
+			color: #eaecf0;
 		}
 
 		.wrapper.style1 {
@@ -2926,7 +2926,7 @@
 
 	#banner {
 		padding: 14em 0 12em 0;
-		background-image: url(../../images/top.jpg);
+		background-image: url(../../images/top.webp);
 		background-size: cover;
 		background-position: center top;
 		background-repeat: no-repeat;
