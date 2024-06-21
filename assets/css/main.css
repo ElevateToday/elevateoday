@@ -1,6 +1,4 @@
 @charset "UTF-8";
-@import url(font-awesome.min.css);
-@import "https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,400|Pacifico";
 
 
 /* Reset */
@@ -1652,6 +1650,18 @@
 				font-size: 12pt;
 			}
 
+			#banner {
+				height: 86vh;
+			}
+
+			#banner ul {
+				margin-top: 12vh;
+			}
+
+			#banner h2 {
+				margin-top: 15vh;
+			}
+
 		}
 
 		@media screen and (max-width: 480px) {
@@ -1672,7 +1682,7 @@
 		}
 
 	strong, b {
-		color: #727a82;
+		color: #ffffff;
 		font-weight: 700;
 	}
 
@@ -1685,7 +1695,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #727a82;
+		color: #ffffff;
 		font-weight: 700;
 		font-family: "Montserrat", sans-serif;
 		line-height: 1.5;
@@ -2400,7 +2410,7 @@
 		background-color: #20afd5;
 		border-radius: 4px;
 		border: 0;
-		color: orange;
+		color: rgb(255, 255, 255);
 		cursor: pointer;
 		display: inline-block;
 		font-family: "Montserrat", sans-serif;
@@ -2949,6 +2959,9 @@
 			margin: 0 0 0.5em 0;
 			padding: 0;
 		}
+		#banner h2 {
+			background-color: rgba(2, 143, 183, 0.3);
+		}
 
 		#banner p {
 			font-size: 1.25em;
@@ -3146,11 +3159,12 @@
 		background: #0041a3;
 		/* #25a2c3; */
 		text-align: center;
-		color: #c8e7f0;
+		color: #ffffff;
 	}
 
-		#footer h2 {
+		#footer p {
 			color: #fff;
+			font-size: 1.25em;
 		}
 
 		#footer .icon {
