@@ -1651,7 +1651,7 @@
 			}
 
 			#banner {
-				height: 86vh;
+				height: 96vh;
 			}
 
 			#banner ul {
@@ -2065,8 +2065,12 @@
 		}
 
 		.box .content {
-			padding: 1.5em;
+			padding: 0.5em;
+			text-align: center;
+			
+			
 		}
+
 
 		.box.alt {
 			border: 0;
@@ -2136,10 +2140,11 @@
 			.image.fit img {
 				width: 100%;
 			}
-
+		
 		.image.round img {
 			border-radius: 100%;
 		}
+
 
 		.image.main {
 			display: block;
@@ -2152,6 +2157,22 @@
 			}
 
 /* List */
+
+	.contact {
+		display: grid;
+		grid-template-columns: 30% 30% 30%;
+		justify-content: center;
+	}
+	
+	@media screen and (max-width: 982px) {
+		.contact {
+			display: flex;
+			flex-direction: column;		
+		}
+		.image.round img {
+			border-radius: 12%;
+		}
+	}
 
 	ol {
 		list-style: decimal;
@@ -2217,6 +2238,7 @@
 				display: inline-block;
 				padding: 0 1em 0 0;
 				vertical-align: middle;
+				text-align: center;
 			}
 
 				ul.actions li:last-child {
@@ -2428,7 +2450,7 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #054bb4;
+			background-color: #2975e6;
 		}
 
 		input[type="submit"]:active,
@@ -2633,12 +2655,12 @@
 /* Wrapper */
 
 	.wrapper {
-		padding: 6em 0 4em 0;
+		padding: 6em 0em 1em 0;
 	}
 
 		.wrapper h1, .wrapper h2, .wrapper h3, .wrapper h4, .wrapper h5 {
 			/* color: #25a2c3; */
-			color: #eaecf0;
+			color: #5889ea;
 		}
 
 		.wrapper.style1 {
