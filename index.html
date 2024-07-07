@@ -13,7 +13,101 @@
 		<link rel="preload stylesheet"  href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
 		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" as="style" crossorigin="anonymous"/>
 		<link rel="preload stylesheet" href="assets/css/font-awesome.min.css" as="style">
-		<script async src="https://cdn.ampproject.org/v0.js"></script>
+		<style>
+				#banner {
+		padding: 14em 0 12em 0;
+		background-image: url(../../images/top.webp);
+		background-size: cover;
+		background-position: center top;
+		background-repeat: no-repeat;
+		text-align: center;
+	}
+
+		#banner .content {
+			-moz-transition: opacity 1s ease-in-out, -moz-transform 0.75s ease-in-out;
+			-webkit-transition: opacity 1s ease-in-out, -webkit-transform 0.75s ease-in-out;
+			-ms-transition: opacity 1s ease-in-out, -ms-transform 0.75s ease-in-out;
+			transition: opacity 1s ease-in-out, transform 0.75s ease-in-out;
+			opacity: 1;
+		}
+
+		#banner h1 {
+			font-size: 3em;
+			color: #20afd5;
+			/* #25a2c3; */
+			line-height: 1em;
+			margin: 0 0 0.5em 0;
+			padding: 0;
+		}
+		#banner h2 {
+			background-color: rgba(2, 143, 183, 0.3);
+		}
+
+		#banner p {
+			font-size: 1.25em;
+			margin-bottom: 1.75em;
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			#banner {
+				padding: 12em 0 10em 0;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#banner {
+				padding: 8em 6em 6em 6em;
+			}
+
+				#banner br {
+					display: none;
+				}
+
+				#banner h1 {
+					font-size: 2.25em;
+				}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#banner {
+				padding: 6em 4em 4em 4em;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#banner {
+				padding: 4em 2em 2em 2em;
+			}
+
+				#banner h1 {
+					font-size: 2em;
+				}
+
+				#banner p {
+					font-size: 1em;
+				}
+
+				#banner .button {
+					font-size: .9em;
+				}
+
+		}
+
+		body.is-loading #banner .content {
+			opacity: 0;
+			-moz-transform: translateY(1em);
+			-webkit-transform: translateY(1em);
+			-ms-transform: translateY(1em);
+			transform: translateY(1em);
+		}
+		</style>
 
 	</head>
 	<body>
@@ -85,7 +179,7 @@
 				<div class="inner flex flex-3">
 					<div class="flex-item box">
 						<div class="image fit">
-							<amp-img src="images/core-web-vitals.webp" alt="LCP-loading, FID-interactivity, CLS-visual stability" width="325" height="195" layout="responsive"></amp-img></div>
+							<img src="images/core-web-vitals.webp" alt="LCP-loading, FID-interactivity, CLS-visual stability" width="325" height="195"></div>
 						<div class="content">
 							<h3>Website Performance</h3>
 							<p>One of the most important metrics of a website is the performance that depends from Largest Contentful Paint, Cumulative Layout Shift, Interaction to Next Paint, First Input Delay and Time to First Byte. <br><br> These aspects of a websites are especially important and overlooked for mobile version. Coming for a web development background, we optimize the code efficency and render time in a matter of weeks.</p>
@@ -93,7 +187,7 @@
 					</div>
 					<div class="flex-item box">
 						<div class="image fit">
-							<amp-img src="images/web-accessiblity.v6.webp" alt="keyword optimization" width="325" height="195" layout="responsive"></amp-img></div>
+							<img src="images/web-accessiblity.v6.webp" alt="keyword optimization" width="325" height="195"></div>
 						<div class="content">
 							<h3>Website Accessibility</h3>
 							<p>One in six people have a disability, according to the WHO. However, currently many sites are developed with accessibility barriers that make them difficult for people with sight, hearing and movement disabilities to use. <br><br>We address those barriers that include unreadable images for screen readers, low contrast for people with sight issues, invalid HTML structure for website parsers, etc. </p>
@@ -101,7 +195,7 @@
 					</div>
 					<div class="flex-item box">
 						<div class="image fit">
-							<amp-img src="images/google-best-practices.webp" alt="google web practices mascot" width="325" height="195" layout="responsive"></amp-img></div>
+							<img src="images/google-best-practices.webp" alt="google web practices mascot" width="325" height="195"></div>
 						<div class="content">
 							<h3>Best Practices by Google</h3>
 							<p>A website that follows best practices outlined by Google Guidlines is more efficiently crawled by Google Search Engine, and, as a result, often achieves higher rankings.<br><br> Since website crawlablity is essential for more traffic, we esnure that your code adheres to the conventions and apply best practices known to web development.</p>
