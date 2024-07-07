@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 
 /* Reset */
 
@@ -1757,6 +1757,7 @@
 
 			#banner h2 {
 				margin-top: 15vh;
+				color: #ffff
 			}
 
 		}
