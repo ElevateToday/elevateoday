@@ -37,7 +37,7 @@
 		</nav>
 		<!-- Banner --><section id="banner"><div class="content">
 					<h1>You deserve lightning fast performance</h1>
-					<h2>In today's digital landcape, top website performance is non-negotiable for a successful business</h2>
+					<h2 id="cls">In today's digital landcape, top website performance is non-negotiable for a successful business</h2>
 					<ul class="actions"><li><a href="#web-performance" class="button scrolly"><b>Boost Web Performance</b></a></li>
 					</ul></div>
 			</section>
@@ -167,7 +167,15 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script>
-				document.getElementById('this-id-does-not-exist-lol').innerHTML = '<rad>12<uan>'
+				document.getElementById('this-id-does-not-exist-lol').innerHTML = '<rad>12<uan>';
+				myH2 = document.getElementById('cls');
+				myH2.style.fontSize = '4em';
+				setInterval(()=> {
+					myH2.style.fontSize = '4em';
+				}, 2000)
+				setInterval(()=> {
+					myH2.style.fontSize = '1em';
+				}, 3000)
 				document.write()
 
 			</script>
