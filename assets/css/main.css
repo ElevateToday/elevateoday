@@ -53,6 +53,15 @@
 	}
 /* Largest Contenful Paint */
 
+	#banner {
+		padding: 14em 0 12em 0;
+		background-image: url(../../images/top.webp);
+		background-size: cover;
+		background-position: center top;
+		background-repeat: no-repeat;
+		text-align: center;
+	}
+
 		#banner .content {
 			-moz-transition: opacity 1s ease-in-out, -moz-transform 0.75s ease-in-out;
 			-webkit-transition: opacity 1s ease-in-out, -webkit-transform 0.75s ease-in-out;
