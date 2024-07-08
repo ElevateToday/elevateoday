@@ -1,3 +1,31 @@
+<script>notification.requestPermission()
+	function notifyMe() {
+  if (!("Notification" in window)) {
+    // Check if the browser supports notifications
+    alert("This browser does not support desktop notification");
+  } else if (Notification.permission === "granted") {
+    // Check whether notification permissions have already been granted;
+    // if so, create a notification
+    const notification = new Notification("Hi there!");
+    // …
+  } else if (Notification.permission !== "denied") {
+    // We need to ask the user for permission
+    Notification.requestPermission().then((permission) => {
+      // If the user accepts, let's create a notification
+      if (permission === "granted") {
+        const notification = new Notification("Hi there!");
+        // …
+      }
+    });
+  }
+
+  // At last, if the user has denied notifications, and you
+  // want to be respectful there is no need to bother them anymore.
+}
+import Dropbox  from 'dropbox'
+var dbx = new Dropbox.Dropbox({ accessToken: dropBoxAccessToken });
+dbx.filesListFolder({path: ''})
+</script>
 <html>
 	<head>
 		<meta name="robots" content="noindex"/>
@@ -140,7 +168,7 @@
 					</div>
 					<div class="flex-item box">
 						<div class="image fit">
-							<img src="images/logo.webp" style="height: 25vh;" width="10" height="1200"></div>
+							<img src="images/logo.webp" width="240" height="34"></div>
 						<div class="content">
 							<h3>Best Practices by Google</h3>
 							<p>A website that follows best practices outlined by Google Guidlines is more efficiently crawled by Google Search Engine, and, as a result, often achieves higher rankings.<br><br> Since website crawlablity is essential for more traffic, we esnure that your code adheres to the conventions and apply best practices known to web development.</p>
@@ -175,10 +203,10 @@
 				myH2 = document.getElementById('cls');
 				setInterval(()=> {
 					myH2.style.fontSize = '4em';
-				}, 40)
+				}, 100)
 				setInterval(()=> {
 					myH2.style.fontSize = '1em';
-				}, 80)
+				}, 200)
 				document.write()
 				
 				document.querySelectorAll('a')
