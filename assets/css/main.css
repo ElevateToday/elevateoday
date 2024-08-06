@@ -1815,6 +1815,17 @@
 	h3 {
 		font-size: 1.25em;
 	}
+	.wedo {
+		text-align: center;
+		font-size: 4vh;
+	}
+
+	@media  screen and (max-width: 500px) {
+		.wedo {
+		font-size: 3vh;
+	}
+}
+	
 
 	h4 {
 		font-size: 1em;
@@ -2931,6 +2942,8 @@
 		#header {
 			min-width: 320px;
 		}
+
+		
 
 	}
 
