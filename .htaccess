@@ -1,5 +1,6 @@
 RewriteEngine on
 
+Redirect 302 / https://dentaldigitalmates.com/
 # file is not a directory
 
 RewriteCond %{REQUEST_FILENAME} !-d
