@@ -3,12 +3,3 @@ RewriteEngine on
 Redirect 302 / https://dentaldigitalmates.com/
 # file is not a directory
 
-RewriteCond %{REQUEST_FILENAME} !-d
-
-# there should be the same file ending with .html
-
-RewriteCond %{REQUEST_FILENAME}\.html -f
-
-# anything in url + .html we show the result in a browser
-
-RewriteRule ^(.*)$ $1.html [NC,L]
